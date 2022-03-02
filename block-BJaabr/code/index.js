@@ -44,22 +44,20 @@ Do the following with above problem.
 function addOne(a) {
   return a+1
 }
-addOne(2)
 
 // - Write a Function Expression
 
 let addOne = function (a) {
   return a+1;
 };
-addOne(2)
 
 // - Write an Arrow Function without curly brackets(if possible)
-let addOne = (a) => a=1;
+let addOne = (a) => a+1;
 addOne(2)
 
 
 // - Write an Arrow Function with curly brackets
-let addOne = (a=1) => {
+let addOne = (a) => {
   return a+1;
 };
 addOne(2)
@@ -76,7 +74,6 @@ addOne(2)
 
 function addOne(a) {
   let answer =  a+1
-
   return answer
 }
 addOne(2)
@@ -84,9 +81,6 @@ addOne(2)
 // - What is the typeof returnValue
 
 string
-
-
-
 
 
 /* 2. Subtract one
@@ -105,16 +99,13 @@ subtractOne(2)
 let subtractOne = function (a) {
   return a-1;
 };
-subtractOne(2)
 // - Write an Arrow Function without curly brackets(if possible)
-let subtractOne = (a) => a=1;
-subtractOne(2)
+let subtractOne = (a) => a-1;
 
 // - Write an Arrow Function with curly brackets
-let subtractOne = (a=1) => {
+let subtractOne = (a) => {
   return a-1;
 };
-subtractOne(2)
 // - Execute the function
 function subtractOne(a) {
   return a-1
@@ -123,15 +114,12 @@ subtractOne(2)
 // - Execute the function and store the return value in a variable.
 function subtractOne(a) {
   let answer =  a-1
-
   return answer
 }
 subtractOne(2)
 
 // - What is the typeof returnValue
 string
-
-
 
 
 
@@ -153,22 +141,25 @@ let sum = function (a, b) {
 };
 sum()
 // - Write an Arrow Function without curly brackets(if possible)
-let sum = (a, b) => a=1, b=1;
+let sum = (a, b) => a + b;
 sum()
 
+
 // - Write an Arrow Function with curly brackets
-let sum = (a=1) => {
-  return a-1;
+let sum = (a,b) => {
+  return a+b;
 };
-sum(2)
+
+
 // - Execute the function
-
+sum ()
 // - Execute the function and store the return value in a variable
-
+function sum(a,b) {
+  let answer =  a+b;
+  return answer
+}
 // - What is the typeof returnValue
-
-
-
+string
 
 
 /* 4. Square of the given value
@@ -179,19 +170,29 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function square ()
+function square (a){
+  return a ** 2
+}
 // - Write a Function Expression
-
+let square = function (a) {
+  return a ** 2;
+};
 // - Write an Arrow Function without curly brackets(if possible)
+let square = (a) => a ** 2;
 
 // - Write an Arrow Function with curly brackets
-
+let square = (a) => {
+  return a ** 2;
+};
 // - Execute the function
-
+square ()
 // - Execute the function and store the return value in a variable
-
+function square(a) {
+  let answer =  a ** 2;
+  return answer
+}
 // - What is the typeof returnValue
-
+string
 
 
 
@@ -203,20 +204,28 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function isGreater () {
-return x>y 
-}
-isGreater()
-// - Write a Function Expression
+function isGreater (x, y) {
+return x>y;
+} 
 
+// - Write a Function Expression
+let isGreater = function (x, y) {
+  return x > y;
+};
 // - Write an Arrow Function without curly brackets(if possible)
+let isGreater = (x, y) => x > y;
 
 // - Write an Arrow Function with curly brackets
-
+let isGreater = (x, y) => {
+  return x > y;
+};
 // - Execute the function
-
+isGreater ()
 // - Execute the function and store the return value in a variable
-
+function isGreater(x, y) {
+  let answer =  x > y;
+  return answer
+}
 // - What is the typeof returnValue
 
 /* 6.
@@ -230,20 +239,48 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function oddOrEven ()
-
-
-if (i % 2 !== 0)
+function oddOrEven (num) {
+if (num % 2 === 0) {
+  return `Number is even`;
+} else {
+  return `Number is odd`;
+}
+};
 // - Write an anonymous Function Expression
-i % 2 === 0
+let oddOrEven = function isOdd(num) {
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+  };
 // - Write an named Function Expression
-
+let oddOrEven = (num) => {
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+  };
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+let oddOrEven = (num) => num % 2 === 0 ? `Number is even` : `Number is odd`;
+
 
 // - Write an Arrow Function with curly brackets
+let oddOrEven = (num) => {
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+  };
 
 // - Execute the function
-
+oddOrEven ()
 // - Execute the function and store the return value in a variable
-
+function oddOrEven(num) {
+  let answer =  num % 2 === 0;
+  return answer
+}
 // - What is the typeof returnValue
+string
