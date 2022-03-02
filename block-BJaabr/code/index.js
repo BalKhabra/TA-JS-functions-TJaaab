@@ -41,18 +41,53 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function addOne(a) {
+  return a+1
+}
+addOne(2)
 
 // - Write a Function Expression
 
+let addOne = function (a) {
+  return a+1;
+};
+addOne(2)
+
 // - Write an Arrow Function without curly brackets(if possible)
+let addOne = (a) => a=1;
+addOne(2)
+
 
 // - Write an Arrow Function with curly brackets
+let addOne = (a=1) => {
+  return a+1;
+};
+addOne(2)
+
 
 // - Execute the function
 
+function addOne(a) {
+  return a+1
+}
+addOne(2)
+
 // - Execute the function and store the return value in a variable.
 
+function addOne(a) {
+  let answer =  a+1
+
+  return answer
+}
+addOne(2)
+
 // - What is the typeof returnValue
+
+string
+
+
+
+
 
 /* 2. Subtract one
 
@@ -62,18 +97,43 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function subtractOne(a) {
+  return a-1
+}
+subtractOne(2)
 // - Write a Function Expression
-
+let subtractOne = function (a) {
+  return a-1;
+};
+subtractOne(2)
 // - Write an Arrow Function without curly brackets(if possible)
+let subtractOne = (a) => a=1;
+subtractOne(2)
 
 // - Write an Arrow Function with curly brackets
-
+let subtractOne = (a=1) => {
+  return a-1;
+};
+subtractOne(2)
 // - Execute the function
-
+function subtractOne(a) {
+  return a-1
+}
+subtractOne(2)
 // - Execute the function and store the return value in a variable.
+function subtractOne(a) {
+  let answer =  a-1
+
+  return answer
+}
+subtractOne(2)
 
 // - What is the typeof returnValue
+string
+
+
+
+
 
 /* 3. Add two numbers
 
@@ -83,18 +143,33 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function sum (a,b){
+  return a+b
+}
+sum()
 // - Write a Function Expression
-
+let sum = function (a, b) {
+  return a-b;
+};
+sum()
 // - Write an Arrow Function without curly brackets(if possible)
+let sum = (a, b) => a=1, b=1;
+sum()
 
 // - Write an Arrow Function with curly brackets
-
+let sum = (a=1) => {
+  return a-1;
+};
+sum(2)
 // - Execute the function
 
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
+
+
+
+
 
 /* 4. Square of the given value
 
@@ -104,7 +179,7 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function square ()
 // - Write a Function Expression
 
 // - Write an Arrow Function without curly brackets(if possible)
@@ -117,6 +192,9 @@ Do the following with above problem.
 
 // - What is the typeof returnValue
 
+
+
+
 /* 5. Find isGreater
 
 Write a function named isGreater that accepts two numbers`x` and`y` and returns`true` if x is greater than y or return `false`.
@@ -125,7 +203,10 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function isGreater () {
+return x>y 
+}
+isGreater()
 // - Write a Function Expression
 
 // - Write an Arrow Function without curly brackets(if possible)
@@ -149,9 +230,12 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function oddOrEven ()
 
+
+if (i % 2 !== 0)
 // - Write an anonymous Function Expression
-
+i % 2 === 0
 // - Write an named Function Expression
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
