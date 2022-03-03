@@ -12,10 +12,10 @@ minToSec(2) ➞ 120
 
 // - Write a Function Decleration for above problem
 function minToSec(min) {
-  return min * 60 
+  return min * 60
 }
 // - Execute the function with required parameter
-
+minToSec (30)
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
 Return true and false based on that.
@@ -26,11 +26,11 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lower, upper, number) {
+  return num < lower && num < upper;
 }
 // - Execute the function with required parameter
-
+isInRange (1, 20, 9)
 /* 2. calculateBMI
 
 
@@ -49,8 +49,20 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(weight, height) {
+  let bmi = weight / (height * height)
+  switch(true) {
+    case bmi < 18.5:
+      return "Underweight";
+    case bmi > 10.5 && bmi < 24.9:
+    return "Normal";
+    case bmi > 25 && bmi < 29.9:
+      return "Overweight";
+    case bmi > 30:
+      return "Obese"
+    default:
+      alert("Enter valid input")
+  }
 }
 
 /* 3. appropiateDrinks
@@ -64,8 +76,19 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+  switch(true) {
+    case age < 15:
+      return "drink fruit juice";
+    case age < 19:
+    return "drink soda";
+    case age < 22:
+      return "drink fruit-flavored beer";
+    case age > 21:
+      return "drink throat-piercing vodka"
+    default:
+      alert("Enter valid input")
+  }
 }
 
 /* 4. Add two numers or string
@@ -79,8 +102,14 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(val1, val2) {
+  if (typeof val1 == "number" &&  typeof val2 == "number"){
+    return val1 + val2;
+  } else if (typeof val1 == "string" &&  typeof val2 == "string"){
+    return val1 + " "  + val2;
+  } else {
+    return `Enter Valid Input`;
+  }
 }
 
 // Function Test
