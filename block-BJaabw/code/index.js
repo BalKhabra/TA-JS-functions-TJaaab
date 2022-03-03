@@ -11,8 +11,8 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(min) {
+  return min * 60 
 }
 // - Execute the function with required parameter
 
